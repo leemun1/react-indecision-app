@@ -43,7 +43,6 @@ const render = () => {
             return <li key="{option}">{option}</li>
           })
         }
-
       </ol>
       <form onSubmit={onFormSubmit}>
         <input type="text" name="option" />
