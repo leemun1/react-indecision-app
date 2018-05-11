@@ -12,5 +12,11 @@ module.exports = {
       test: /\.js$/,
       exclude: /node_modules/
     }]
+  },
+  devtool: 'cheap-module-eval-source-map',
+  devServer: {
+    contentBase: path.join(__dirname, 'public')
   }
 };
+
+// "build-babel": "babel src/app.js --out-file=public/scripts/app.js --presets=env,react --watch"
